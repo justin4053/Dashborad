@@ -1,0 +1,28 @@
+<!-- Include header -->
+<%- include('include/_header.ejs')%>
+    <!-- /Include header -->
+    <!-- sidebar -->
+    <div class="app-content">
+        <div class="app-sidebar">
+            <a href="/" class="app-sidebar-link">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="/user-form" class="app-sidebar-link active">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+        <!-- /sidebar -->
+        <div class="projects-section">
+            <div class="projects-section-header">
+                <p>New User</p>
+                <p class="time"></p>
+            </div>
+            <div class="box-nav d-flex justify-between">
+                <a href="/user-form">
+                    <span class="new-user"><i class="fas fa-angle-double-left"></i> All Users<i class="fas fa-user"></i></span>
+                </a>
+            </div>
+            <%- include('include/_user_form.ejs')%>
+                <!-- Include footder -->
+                <%- include('include/_footer.ejs')%>
+                    <!-- /Include footder -->
