@@ -19,6 +19,12 @@
             <%= users[i].status%>
         </td>
         <td>
+            <%= users[i].create_date%>
+        </td>
+        <td>
+            <%= users[i].create_time%>
+        </td>
+        <td>
             <a href="/user-update?id=<%= users[i]._id%>" class="btn border-shadow update">
                 <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
             </a>

@@ -12,7 +12,9 @@ let schema = new mongoose.Schema({
         unique: true
     },
     gender: String,
-    status: String
+    status: String,
+    create_date: String,
+    create_time: String
 })
 
 const Userdb = mongoose.model('userdb', schema)

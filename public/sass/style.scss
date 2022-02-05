@@ -56,7 +56,7 @@ body {
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -731,12 +731,12 @@ a {
 
 .new-user {
     font-size: 1em;
-    background: var(--dark);
+    background: rgba(0, 145, 255, 0.863);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    border: 1px solid var(--border-btn);
-    box-shadow: 1px 3px 10px #e9ecef;
+    border: 2px solid var(--border-btn);
+    box-shadow: 3px 3px 20px #e9ecef;
 }
 
 .text-gradient {

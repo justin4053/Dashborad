@@ -106,7 +106,15 @@
 <script>
     let dt = new Date()
     let show = document.querySelector(".time")
-    show.innerHTML = "Date : " + dt.getFullYear() + " / " + dt.getMonth() + " / " + dt.getDate()
+    const date = dt.getFullYear() + " / " + (dt.getMonth() < 10 ? '0' : '') + dt.getMonth() + " / " + (dt.getDate() < 10 ? '0' : '') + dt.getDate()
+    show.innerHTML = "Date : " + date
+
+    if (window.location.pathname == "/user-add") {
+        let create_date = document.querySelector(".create_date")
+        create_date.setAttribute('value', date)
+        let create_time = document.querySelector(".create_time")
+        create_time.setAttribute('value', dt.getHours() + " : " + (dt.getMinutes() < 10 ? '0' : '') + dt.getMinutes() + " : " + dt.getSeconds())
+    }
 </script>
 
 </html>

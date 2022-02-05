@@ -13,6 +13,8 @@ exports.create = (req, res) => {
         name: req.body.name,
         email: req.body.email,
         gender: req.body.gender,
+        create_date: req.body.create_date,
+        create_time: req.body.create_time,
         status: req.body.status
     })
 
