@@ -15,6 +15,9 @@ route.get('/user-add', services.user_add)
 
 route.get('/user-update', services.user_update)
 
+route.get('/tictactoe', services.tictactoe)
+
+
 //API
 route.post('/api/users', controller.create)
 route.get('/api/users', controller.find)

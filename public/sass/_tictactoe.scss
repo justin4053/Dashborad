@@ -1,0 +1,33 @@
+:root {
+    --text-light: #e9e9e9;
+    --text-dark: #363636;
+    --text-btn: #816df2;
+    --text-yellow: #dae26a;
+    --text-selected: #34D399;
+    --cell-size: 100px;
+    /* images */
+    --female-1: url('./assets/f1.png');
+    --female-2: url('./assets/f2.png');
+    --male-1: url('./assets/m1.png');
+    --male-2: url('./assets/m2.png');
+}
+
+// Start Window
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primary-btn {
+    border: none;
+    background: var(--text-btn);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--text-light);
+    margin-top: 2em;
+    font-size: 1.5em;
+    cursor: pointer;
+}

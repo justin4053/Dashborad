@@ -1,0 +1,140 @@
+// user_form.ejs
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.new-user {
+    font-size: 1em;
+    background: rgba(0, 145, 255, 0.863);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 2px solid var(--border-btn);
+    box-shadow: 3px 3px 20px #e9ecef;
+}
+
+.text-gradient {
+    background: var(--dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    margin: 1em 0;
+}
+
+.table {
+    border-spacing: 0px;
+    width: 100%;
+    td,
+    th {
+        padding: 0.75em;
+        vertical-align: top;
+        text-align: center;
+        border-top: 1px solid var(--border);
+    }
+    td>a.btn {
+        padding: .3em 1em;
+        font-size: 1.1em;
+        margin: 0 .2em;
+    }
+    tr:hover {
+        background-color: #06d6a0;
+    }
+    tr:hover td>a {
+        box-shadow: none;
+    }
+    .thead-dark th {
+        color: #fff;
+        background-color: var(--dark);
+        border-color: #32383e;
+    }
+}
+
+// user_add.ejs
+#update_user .form-group,
+#add_user .form-group {
+    margin: .8em 0;
+}
+
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"] {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio {
+    margin: 1em 1em;
+}
+
+.radio {
+    width: 20%;
+    input[type='radio'] {
+        position: absolute;
+        opacity: 0;
+    }
+    .radio-label:before {
+        content: "";
+        background: var(--border-btn);
+        border-radius: 100%;
+        border: 1px solid var(--border);
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        position: relative;
+        top: -0em;
+        margin-right: .5em;
+        vertical-align: top;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: all 250ms ease;
+        transition: all 250ms ease;
+    }
+}
+
+.radio input[type='radio']:checked+.radio-label:before {
+    background-color: #16db93;
+    box-shadow: inset 0 0 0 4px #e9ecef;
+}
+
+.radio input[type='radio']:focus+.radio-label:before {
+    outline: none;
+    border-color: #16db93;
+}
+
+.radio input[type='radio']:disabled+.radio-label:before {
+    box-shadow: inset 0 0 0 4px #e9ecef;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn {
+    width: 100%;
+    padding: .9em 1em;
+    background-color: #16db93;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover {
+    background-color: var(--dark);
+    color: var(--border);
+}

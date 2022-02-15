@@ -5,6 +5,8 @@ exports.homeRoutes = (req, res) => {
     res.render('index')
 }
 
+
+// User Form
 exports.user_form = (req, res) => {
     // Make a get request to /api/users
     axios.get('http://localhost:3000/api/users')
@@ -29,4 +31,9 @@ exports.user_update = (req, res) => {
         .catch(err => {
             res.send(err)
         })
+}
+
+// tictactoe
+exports.tictactoe = (req, res) => {
+    res.render('tictactoe')
 }
